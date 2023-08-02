@@ -1,1 +1,25 @@
-<p>formulario works!</p>
+<form >
+  <div class="mb-3">
+    <label for="numero1" class="form-label">PRIMER NUMERO</label>
+    <input
+      type="number"
+      name="numero1"
+      id="numero1"
+      class="form-control"
+      placeholder="ingresa un numero"
+      [(ngModel)]="numero1"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="numero2" class="form-label">SEGUNDO NUMERO</label>
+    <input
+      type="number"
+      name="numero2"
+      id="numero2"
+      class="form-control"
+      placeholder="ingresa un numero"
+      [(ngModel)]="numero2"
+    />
+  </div>
+  <a class="btn btn-primary" href="#" role="button" (click)="sumar()">Sumar</a>
+</form>
